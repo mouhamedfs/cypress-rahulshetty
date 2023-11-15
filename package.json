@@ -1,0 +1,8 @@
+{
+  "name": "CypressRahul",
+  "version": "1.0.0",
+  "devDependencies": {
+    "cypress": "*",
+    "cypress-iframe": "^1.0.1"
+  }
+}

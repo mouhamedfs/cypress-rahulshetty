@@ -1,0 +1,20 @@
+Cypress configuration environment
+    Cypress.env('defaultCommandTimeout', 60000)
+    launch commands with different environments npx cypress run --spec e2e/objects.cy.js --env url:'ahulshettyacademy.com/angularpractice/'
+
+Cypress configuration cloud environment
+    Log in with gooogle account
+    paste the projectId
+    Launch commands : npx cypress run --s
+    pec cypress/e2e/1-getting-started/*.cy.js --headed --browser chrome --record --key 9e2b225e-8f6b-406f-99f6-d8e69125fe78
+
+Retry failed in cypress
+    retries: {
+        runMode: 2,
+        openMode: 2,
+        runIf: 'always'
+      },
+    in cypress.config.js
+
+Install and configure github actions
+        https://docs.cypress.io/guides/continuous-integration/github-actions
