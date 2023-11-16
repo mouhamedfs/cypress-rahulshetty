@@ -4,5 +4,12 @@
   "devDependencies": {
     "cypress": "*",
     "cypress-iframe": "^1.0.1"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/cypress run",
+    "headedMode" : "npm run test --headed",
+    "browserMode" : "npm run test --browser chrome",
+    "cypresscloud": "npm run test --record --key 9e2b225e-8f6b-406f-99f6-d8e69125fe78 --reporter mochawesome",
+    "regression": "npm run test --spec '/cypress/e2e/1-getting-started/Regression-testing/* --reporter mochawesome'"
   }
 }

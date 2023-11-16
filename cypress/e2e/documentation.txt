@@ -18,3 +18,15 @@ Retry failed in cypress
 
 Install and configure github actions
         https://docs.cypress.io/guides/continuous-integration/github-actions
+
+
+Executing cypress test by config in package.json
+"scripts": {
+    "test": "node_modules\\bin\\cypress run"
+    "headedMode" : "npm run test --headed"
+  }
+
+  npm run test
+
+RUn a specific folder to trigger multiple tests in spec files
+    "regression": "npm run test --spec '/cypress/e2e/1-getting-started/Regression-testing/*'"

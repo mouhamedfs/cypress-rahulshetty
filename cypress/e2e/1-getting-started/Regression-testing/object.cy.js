@@ -1,5 +1,5 @@
-import Homepage from "./PageObject/Homepage";
-import ProductPage from "./PageObject/ProductPage";
+import Homepage from "../PageObject/Homepage";
+import ProductPage from "../PageObject/ProductPage";
 
 describe('Test framework hooks', function ()  {
     beforeEach(function () {
