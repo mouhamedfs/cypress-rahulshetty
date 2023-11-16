@@ -2,14 +2,13 @@ name: Cypress Rahul Course
 on: push
 jobs:
   cypress-run:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          start: npm start
-          record: true
+          browser: chrome
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
